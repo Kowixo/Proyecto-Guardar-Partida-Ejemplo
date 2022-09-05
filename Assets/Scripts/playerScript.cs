@@ -20,8 +20,12 @@ public class playerScript : MonoBehaviour
             posXTxt.GetComponent<TextMeshProUGUI>().SetText($"X={Math.Round(transform.position.x, 2)}");
             posYTxt.GetComponent<TextMeshProUGUI>().SetText($"Y={Math.Round(transform.position.y, 2)}");
         }
+    }
+    public Vector2 GetPosition(){
+        return transform.position;
+    }
 
-
-
+    public void SetPosition(Vector2 pos){
+        transform.position = pos;
     }
 }

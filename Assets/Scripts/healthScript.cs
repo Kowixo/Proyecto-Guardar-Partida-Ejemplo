@@ -21,4 +21,13 @@ public class healthScript : MonoBehaviour
 
         healthValue.GetComponent<TextMeshProUGUI>().SetText(health.ToString());
     }
+
+    public int GetHealth(){
+        return health;
+    }
+
+    public void SetHealth(int playerHealth){
+        health = playerHealth;
+        NewValue(0);
+    }
 }
